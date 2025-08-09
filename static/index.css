@@ -1,12 +1,92 @@
+/* TAGS */
 body {
-    background-color: #194953;
+    background-color: #2D6676;
+}
+
+header {
+    display: flex;
 }
 
 h1 {
     color: aliceblue;
 }
 
+/* IDs */
 #projeto {
+    margin-right: 24vw;
+}
+
+#esther{
+    margin-right: 11vw;  
+}
+
+#logo {
+    width: 30vw;
+    height: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hexagono1 {
+    background: #dcb95b;
+}
+
+#hexagono2 {
+    background: #f4ecd5;
+}
+
+#estrela1 {
+    margin-left: 20vw;
+    margin-top: 3vh;
+}
+
+#estrela2 {
+    margin-right: 15vw;
+    margin-top: 3vh;
+}
+
+#estrela3 {
+    margin-right: 3vw;
+}
+
+#estrela4 {
+    margin-right: 15vw;
+}
+
+#estrela5 {
+    margin-top: 10vh;
+}
+
+#container1 {
+    gap: 12vw;
+}
+
+/* CLASSES */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.hexagono {
+    width: 21vw;
+    height: 28vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(25% 6%, 75% 6%,
+            100% 50%, 75% 94%,
+            25% 94%, 0% 50%);
+    box-shadow: 0 2px 8px #0003;
     text-align: center;
-    word-spacing: 45vw;
+    padding: 20px;
+}
+
+.botao {
+    border-radius: 2px;
+}
+
+.estrela {
+    width: 7vw;
+    height: 8vh;
 }
