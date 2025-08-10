@@ -12,13 +12,13 @@ h1 {
 }
 
 /* IDs */
-#projeto {
-    margin-right: 24vw;
+ #projeto {    
+    margin-right: 13vw;
 }
 
-#esther{
-    margin-right: 11vw;  
-}
+#esther {
+    margin-right: 10vw;
+} 
 
 #logo {
     width: 30vw;
@@ -46,26 +46,53 @@ h1 {
     margin-top: 3vh;
 }
 
-#estrela3 {
+/* #estrela3 {
     margin-right: 3vw;
 }
 
 #estrela4 {
     margin-right: 15vw;
-}
+} */
 
 #estrela5 {
     margin-top: 10vh;
 }
 
-#container1 {
-    gap: 12vw;
+#estrela6 {
+    margin-top: 22vh;
+}
+
+#estrela7 {
+    margin-top: 10vh;
+}
+
+#botao1 {
+    background-color: #c57c37;
+    margin-right: 10vw;
+}
+
+#botao2 {
+    background-color: #B0800C;
+    margin-left: 10vw;
+}
+
+#botao3 {
+    background-color: #044559;
+    margin-left: 41vw;
+}
+
+#container1{
+    gap: 6vw;
 }
 
 /* CLASSES */
 .container {
     display: flex;
     justify-content: center;
+}
+
+.containerEstrela{
+    text-align: center;
 }
 
 .hexagono {
@@ -77,16 +104,21 @@ h1 {
     clip-path: polygon(25% 6%, 75% 6%,
             100% 50%, 75% 94%,
             25% 94%, 0% 50%);
-    box-shadow: 0 2px 8px #0003;
     text-align: center;
-    padding: 20px;
+    padding: 5vh;
 }
 
 .botao {
-    border-radius: 2px;
+    width: 16vw;
+    height: 8vh;
+    border-style: solid;
+    border-radius: 10vw;
+    border-width: 1vh;
+    border-color: white;
+    color: lavender;
 }
 
 .estrela {
-    width: 7vw;
-    height: 8vh;
+    width: 8vw;
+    height: 9vh;
 }
