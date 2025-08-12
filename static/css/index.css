@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    display: flex;
+    margin: 10vw;
 }
 
 h1 {
@@ -13,8 +13,8 @@ h1 {
 }
 
 /* IDs */
- #projeto {    
-    word-spacing: 45vw;
+#projeto {
+    word-spacing: 36.9vw;
 }
 
 #logo {
@@ -27,6 +27,8 @@ h1 {
 
 #hexagono1 {
     background: #dcb95b;
+    margin-left: 1vw;
+    font-size: 0.8em;
 }
 
 #hexagono2 {
@@ -35,21 +37,31 @@ h1 {
 
 #botao1 {
     background-color: #c57c37;
-    margin-right: 10vw;
+    margin-left: 16vw;
 }
 
 #botao2 {
     background-color: #B0800C;
-    margin-left: 10vw;
 }
 
 #botao3 {
     background-color: #044559;
-    margin-left: 41vw;
+    margin-top: 12.5vh
 }
 
 #container1 {
-    gap: 28vw;
+    gap: 17.9vw;
+}
+
+#container2 {
+    gap: 5.8vw;
+    margin-top: 3vh;
+}
+
+#estrelaDosDesejos {
+    width: 10vw;
+    height: 15vh;
+    margin-top: 14vh;
 }
 
 /* CLASSES */
@@ -60,16 +72,17 @@ h1 {
 
 .hexagono {
     width: 21vw;
-    height: 28vh;
+    height: 24vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(25% 6%, 75% 6%,
+    /* clip-path: polygon(25% 6%, 75% 6%,
             100% 50%, 75% 94%,
-            25% 94%, 0% 50%);
+            25% 94%, 0% 50%); */
     text-align: center;
     padding: 5vh;
-    opacity: 0.79;
+    opacity: 0.90;
+    border-radius: 1vw;
 }
 
 .botao {
@@ -80,4 +93,8 @@ h1 {
     border-width: 1vh;
     border-color: white;
     color: lavender;
+}
+
+.botao:hover {
+    cursor: pointer;
 }
