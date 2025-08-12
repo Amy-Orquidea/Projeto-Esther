@@ -1,6 +1,7 @@
 /* TAGS */
 body {
-    background-color: #2D6676;
+    background-image: url('/static/img/backgroundIndex.gif');
+    background-size: cover;
 }
 
 header {
@@ -36,36 +37,6 @@ h1 {
     background: #f4ecd5;
 }
 
-#estrela1 {
-    margin-left: 20vw;
-    margin-top: 3vh;
-}
-
-#estrela2 {
-    margin-right: 15vw;
-    margin-top: 3vh;
-}
-
-/* #estrela3 {
-    margin-right: 3vw;
-}
-
-#estrela4 {
-    margin-right: 15vw;
-} */
-
-#estrela5 {
-    margin-top: 10vh;
-}
-
-#estrela6 {
-    margin-top: 22vh;
-}
-
-#estrela7 {
-    margin-top: 10vh;
-}
-
 #botao1 {
     background-color: #c57c37;
     margin-right: 10vw;
@@ -91,10 +62,6 @@ h1 {
     justify-content: center;
 }
 
-.containerEstrela{
-    text-align: center;
-}
-
 .hexagono {
     width: 21vw;
     height: 28vh;
@@ -116,9 +83,4 @@ h1 {
     border-width: 1vh;
     border-color: white;
     color: lavender;
-}
-
-.estrela {
-    width: 8vw;
-    height: 9vh;
 }
