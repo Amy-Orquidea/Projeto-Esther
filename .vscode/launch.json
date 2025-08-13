@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EstherApplication<esther>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "esther.esther.EstherApplication",
+            "projectName": "esther",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
