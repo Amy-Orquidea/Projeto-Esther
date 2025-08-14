@@ -1,11 +1,12 @@
 package esther.esther.repository;
 
 
-import esther.esther.model.Comentario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import esther.esther.model.Usuario;
+
 @Repository
-public interface ComentarioRepository extends JpaRepository<Comentario, Integer>{
+public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
     
 }

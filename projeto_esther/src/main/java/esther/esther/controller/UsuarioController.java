@@ -10,20 +10,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import esther.esther.model.Comentario;
-import esther.esther.service.ComentarioService;
+import esther.esther.model.Usuario;
+import esther.esther.service.UsuarioService;
 
 
 @Controller
 @RequestMapping("/comentario")
-public class ComentarioController {
+public class UsuarioController {
 
     @Autowired
-    private ComentarioService comentarioService;
+    private UsuarioService usuarioService;
 
     @GetMapping
     public String listarComentarios(Model model) {
-        model.addAttribute("comentarios", comentarioService.buscarComentarios());
+        model.addAttribute("comentarios", usuarioService.buscarComentarios());
         return "comentario/lista";
     }
     
@@ -33,9 +33,9 @@ public class ComentarioController {
     }
     
     @PostMapping
-    public String salvarComentario(@ModelAttribute Comentario comentario, RedirectAttributes redirectAttributes) {
+    public String salvarComentario(@ModelAttribute Usuario usuario, RedirectAttributes redirectAttributes) {
         try {
-            comentarioService.salvarComentario(comentario);
+            usuarioService.salvarComentario(usuario);
             redirectAttributes.addFlashAttribute("sucesso", "Comentário salvo com sucesso!");
             return "redirect:/comentario";
         } catch (Exception e) {
@@ -47,7 +47,7 @@ public class ComentarioController {
     @GetMapping("/deletar/{id}")
     public String deletarComentario(@PathVariable Integer id, RedirectAttributes redirectAttributes){
         try{
-            comentarioService.excluirComentarioPorId(id);
+            usuarioService.excluirComentarioPorId(id);
             redirectAttributes.addFlashAttribute("mensagemSucesso", "Comentário Deletado!");
         }catch (Exception e){
             redirectAttributes.addFlashAttribute("mensagemErro", "Erro ao excluir comentário " + e.getMessage());
