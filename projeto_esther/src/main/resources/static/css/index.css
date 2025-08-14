@@ -25,14 +25,15 @@ h1 {
     margin-right: auto;
 }
 
-#hexagono1 {
+#caixa1 {
     background: #dcb95b;
     margin-left: 1vw;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
-#hexagono2 {
+#caixa2 {
     background: #f4ecd5;
+    font-size: 0.9em;
 }
 
 #botao1 {
@@ -70,15 +71,12 @@ h1 {
     justify-content: center;
 }
 
-.hexagono {
+.caixa {
     width: 21vw;
     height: 24vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* clip-path: polygon(25% 6%, 75% 6%,
-            100% 50%, 75% 94%,
-            25% 94%, 0% 50%); */
     text-align: center;
     padding: 5vh;
     opacity: 0.90;
