@@ -2,6 +2,7 @@ package esther.esther.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import esther.esther.model.Usuario;
@@ -11,7 +12,12 @@ import jakarta.persistence.EntityNotFoundException;
 @Service
 public class UsuarioService {
 
-    private UsuarioRepository usuarioRepository;
+    @Autowired
+    private final UsuarioRepository usuarioRepository;
+    
+    public UsuarioService(UsuarioRepository usuarioRepository) {
+    this.usuarioRepository = usuarioRepository;
+    }
 
     public List<Usuario> buscarComentarios() {
         return usuarioRepository.findAll();

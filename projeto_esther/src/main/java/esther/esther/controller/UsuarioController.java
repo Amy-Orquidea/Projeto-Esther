@@ -13,25 +13,34 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import esther.esther.model.Usuario;
 import esther.esther.service.UsuarioService;
 
-
 @Controller
 @RequestMapping("/comentario")
 public class UsuarioController {
 
     @Autowired
-    private UsuarioService usuarioService;
+    private final UsuarioService usuarioService;
+
+    public UsuarioController(UsuarioService usuarioService) {
+        this.usuarioService = usuarioService;
+    }
 
     @GetMapping
     public String listarComentarios(Model model) {
-        model.addAttribute("comentarios", usuarioService.buscarComentarios());
+        model.addAttribute("usuarios", usuarioService.buscarComentarios());
         return "comentario/lista";
     }
-    
+
+    @GetMapping("/adm")
+    public String listarComentariosAdm(Model model) {
+        model.addAttribute("usuarios", usuarioService.buscarComentarios());
+        return "comentario/listaAdm";
+    }
+
     @GetMapping("/adicionar")
     public String exibirFormulario() {
         return "comentario/form";
     }
-    
+
     @PostMapping
     public String salvarComentario(@ModelAttribute Usuario usuario, RedirectAttributes redirectAttributes) {
         try {
@@ -45,15 +54,14 @@ public class UsuarioController {
     }
 
     @GetMapping("/deletar/{id}")
-    public String deletarComentario(@PathVariable Integer id, RedirectAttributes redirectAttributes){
-        try{
+    public String deletarComentario(@PathVariable Integer id, RedirectAttributes redirectAttributes) {
+        try {
             usuarioService.excluirComentarioPorId(id);
             redirectAttributes.addFlashAttribute("mensagemSucesso", "Comentário Deletado!");
-        }catch (Exception e){
+        } catch (Exception e) {
             redirectAttributes.addFlashAttribute("mensagemErro", "Erro ao excluir comentário " + e.getMessage());
         }
-        return "redirect:/comentarios";
+        return "redirect:/comentario/adm";
     }
-    
-    
+
 }
