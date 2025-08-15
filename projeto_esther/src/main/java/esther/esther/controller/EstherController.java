@@ -23,8 +23,8 @@ public class EstherController {
 
     @GetMapping("/situacoes")
     public String situacao() {
-        // return "esther/situacao";
-        return "erro";
+        return "esther/situacao";
+        // return "erro";
     }
     
     
