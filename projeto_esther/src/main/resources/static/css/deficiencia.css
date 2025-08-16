@@ -1,0 +1,134 @@
+body {
+  background-image: url('/img/fundo-situações-sociais.gif');
+  background-size: cover;
+  font-family: 'Libre Baskerville', serif;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 18vw;
+  border-bottom: 0.5vh solid aliceblue;
+}
+
+.botao-header {
+  background-color: transparent;
+  font-size: 1.2em;
+  border: none;
+  padding: 1vh 1vw;
+  border-radius: 1vw;
+  margin: 2vh 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.botao-header:hover {
+  cursor: pointer;
+}
+
+.botao-header:active {
+  color: #fde070;
+}
+
+#esquerda {
+  color: #ff66c4;
+}
+
+#meio {
+  color: aliceblue;
+}
+
+#direita {
+  color: aliceblue;
+}
+
+.botao-container {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.botao {
+  width: 50vw;
+  height: 10vh;
+  background-color: #fde070;
+  border: 0.75vh dashed #d49b46;
+  color: #d49b46;
+  border-radius: 10vh;
+  padding: 0 10vw;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.botao:hover {
+  cursor: pointer;
+}
+
+.botao:active {
+  background-color: aliceblue;
+}
+
+.estrela {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+}
+
+/* Estrelas à esquerda */
+.star.esquerda1 {
+  left: 22vw;
+  background-image: url('/img/star-kawaii-kawaii.gif');
+  width: 10vw;
+  height: 5vh;
+  transform: rotate(-25deg);
+  bottom: 7vh;
+}
+
+.star.esquerda2 {
+  left: 23vw;
+  background-image: url('/img/star-kawaii-kawaii.gif');
+  width: 12vw;
+  height: 7vh;
+  transform: rotate(-25deg);
+  bottom: 9.5vh;
+
+}
+
+.star.esquerda3 {
+  left: 26vw;
+  background-image: url('/img/star-kawaii-kawaii.gif');
+  width: 10.7vw;
+  height: 5.7vh;
+  transform: rotate(20deg);
+}
+
+/* Estrelas à direita */
+.star.direita1 {
+  right: 18.3vw;
+  background-image: url('/img/star-kawaii-kawaii.gif');
+  width: 10vw;
+  height: 5vh;
+  transform: rotate(15deg);
+  top: 7vh;
+}
+
+.star.direita2 {
+  right: 15vw;
+  background-image: url('/img/star-kawaii-kawaii.gif');
+  width: 12vw;
+  height: 7vh;
+  transform: rotate(18deg);
+  top: 5.6vh;
+}
+
+.star.direita3 {
+  right: 16vw;
+  background-image: url('/img/star-kawaii-kawaii.gif');
+  width: 9.5vw;
+  height: 4.7vh;
+  transform: rotate(45deg);
+  top: 12vh;
+}
