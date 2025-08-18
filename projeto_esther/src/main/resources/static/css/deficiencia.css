@@ -4,6 +4,14 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 
+p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+}
+
 header {
   display: flex;
   text-align: center;
@@ -14,6 +22,22 @@ header {
 
 #informacao{
   background: linear-gradient(90deg, #004aad, #cb6ce6);
+  display: block;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  border-radius: 1vw;
+  border: 0.75vh solid aliceblue;
+  width: 50vw;
+  height: 40vh;
+}
+
+.pai-flex {
+  display: flex;
+  justify-content: center; /* Centraliza a div horizontalmente */
+  align-items: center; /* Centraliza a div verticalmente */
+  height: 40vh;
+  margin-top:5vh;
 }
 
 .botao-header {
