@@ -12,6 +12,10 @@ header {
   border-bottom: 0.5vh solid aliceblue;
 }
 
+#informacao{
+  background: linear-gradient(90deg, #004aad, #cb6ce6);
+}
+
 .botao-header {
   background-color: transparent;
   font-size: 1.2em;
