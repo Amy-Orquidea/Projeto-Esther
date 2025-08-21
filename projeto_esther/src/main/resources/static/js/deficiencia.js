@@ -20,4 +20,7 @@ for (const botao of botoes) {
     document.getElementById('direita').addEventListener('click', function() {
         window.location.href = 'z';
     });
+        document.getElementById('voltar').addEventListener('click', function() {
+        window.location.href = '/';
+    });
 }

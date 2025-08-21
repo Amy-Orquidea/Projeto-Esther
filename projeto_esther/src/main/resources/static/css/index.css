@@ -2,14 +2,14 @@
 body {
     background-image: url('/img/backgroundIndex.gif');
     background-size: cover;
-}
-
-header {
-    margin: 10vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
     color: aliceblue;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* IDs */
@@ -28,30 +28,35 @@ h1 {
 #caixa1 {
     background: #dcb95b;
     margin-left: 1vw;
-    font-size: 0.7em;
+    font-size: 0.9em;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #caixa2 {
     background: #f4ecd5;
     font-size: 0.9em;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #botao1 {
     background-color: #c57c37;
     margin-left: 16vw;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #botao2 {
     background-color: #B0800C;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #botao3 {
     background-color: #044559;
-    margin-top: 12.5vh
+    margin-top: 12.5vh;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #container1 {
-    gap: 17.9vw;
+    gap: 12vw;
 }
 
 #container2 {
@@ -72,12 +77,12 @@ h1 {
 }
 
 .caixa {
-    width: 21vw;
-    height: 24vh;
+    width: 28vw;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     padding: 5vh;
     opacity: 0.90;
     border-radius: 1vw;
