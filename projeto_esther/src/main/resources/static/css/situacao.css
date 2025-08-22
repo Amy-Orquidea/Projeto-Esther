@@ -36,7 +36,7 @@ header {
   border-radius: 1vw;
   border: 0.75vh solid aliceblue;
   width: 50vw;
-  height: 40vh;
+  height: fit-content;
   opacity: 0.85;
 }
 
@@ -184,7 +184,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: fit-content;
   margin-top: 5vh;
 }
 
