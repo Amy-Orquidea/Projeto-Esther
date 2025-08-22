@@ -12,7 +12,7 @@ for (const botao of botoes) {
         }, 300);
         });
     document.getElementById('esquerda').addEventListener('click', function() {
-        window.location.href = 'y';
+        window.location.href = '/esther/deficiencias';
     });
     document.getElementById('meio').addEventListener('click', function() {      
         window.location.href = 'x';
@@ -24,3 +24,29 @@ for (const botao of botoes) {
         window.location.href = '/';
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Seleciona todas as estrelas que devem ser clicáveis
+    const estrelasClicaveis = document.querySelectorAll('.estrela');
+    // Seleciona todas as divs de informação
+    const divsInfo = document.querySelectorAll('.info');
+
+    estrelasClicaveis.forEach(estrela => {
+        estrela.addEventListener('click', () => {
+            // Oculta todas as divs de informação primeiro
+            divsInfo.forEach(div => {
+                div.classList.add('oculto');
+            });
+
+            // Pega o ID da div de informação a partir do data-target da estrela clicada
+            const targetId = estrela.getAttribute('data-target');
+            // Encontra a div de informação correspondente
+            const divAlvo = document.getElementById(targetId);
+
+            // Se a div de destino existir, remove a classe 'oculto' para mostrá-la
+            if (divAlvo) {
+                divAlvo.classList.remove('oculto');
+            }
+        });
+    });
+});

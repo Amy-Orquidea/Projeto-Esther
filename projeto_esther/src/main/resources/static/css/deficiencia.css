@@ -37,6 +37,7 @@ header {
   border: 0.75vh solid aliceblue;
   width: 50vw;
   height: 40vh;
+  opacity: 0.85;
 }
 
 .informacaoEsquerda {
@@ -51,6 +52,7 @@ header {
   width: 35vw;
   height: fit-content;
   margin-left: 1vw;
+  opacity: 0.85;
 }
 
 .estrela.personagem1 {
@@ -58,6 +60,11 @@ header {
   width: 10vw;
   height: 10vh;
   margin-left: 37vw;
+}
+
+.estrela.personagem1:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .estrela.personagem2 {
@@ -68,12 +75,38 @@ header {
   margin-left: 37vw;
 }
 
+.estrela.personagem2:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 .estrela.personagem3 {
   background-image: url('/img/estrela.gif');
   width: 10vw;
   height: 10vh;
   margin-top: 45vh;
   margin-left: 37vw;
+}
+
+.estrela.personagem3:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.oculto {
+    display: none;
+}
+
+.info {
+    width: 40vw;
+    height: fit-content;
+    padding: 1vw;
+    border: 1px solid #ddd;
+    border-radius: 1vw;
+    background-color: #ecce7f;
+    opacity: 0.85;
+    text-align: justify;
+    margin-left: 8vw;
 }
 
 .div-esquerda {
