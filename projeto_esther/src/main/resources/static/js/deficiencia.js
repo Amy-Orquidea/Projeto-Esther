@@ -26,27 +26,33 @@ for (const botao of botoes) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona todas as estrelas que devem ser clicáveis
-    const estrelasClicaveis = document.querySelectorAll('.estrela');
-    // Seleciona todas as divs de informação
-    const divsInfo = document.querySelectorAll('.info');
+    // Seleciona todos os contêineres principais (as divs com a classe 'div')
+    const secoes = document.querySelectorAll('.div');
 
-    estrelasClicaveis.forEach(estrela => {
-        estrela.addEventListener('click', () => {
-            // Oculta todas as divs de informação primeiro
-            divsInfo.forEach(div => {
-                div.classList.add('oculto');
+    // Itera sobre cada seção
+    secoes.forEach(secao => {
+        // Encontra as estrelas apenas dentro desta seção
+        const estrelasClicaveis = secao.querySelectorAll('.estrela');
+        // Encontra as divs de informação apenas dentro desta seção
+        const divsInfo = secao.querySelectorAll('.info');
+
+        estrelasClicaveis.forEach(estrela => {
+            estrela.addEventListener('click', () => {
+                // Oculta todas as divs de informação apenas dentro desta seção
+                divsInfo.forEach(div => {
+                    div.classList.add('oculto');
+                });
+
+                // Pega o ID da div de informação a partir do data-target da estrela clicada
+                const targetId = estrela.getAttribute('data-target');
+                // Encontra a div de informação correspondente
+                const divAlvo = document.getElementById(targetId);
+
+                // Se a div de destino existir, remove a classe 'oculto' para mostrá-la
+                if (divAlvo) {
+                    divAlvo.classList.remove('oculto');
+                }
             });
-
-            // Pega o ID da div de informação a partir do data-target da estrela clicada
-            const targetId = estrela.getAttribute('data-target');
-            // Encontra a div de informação correspondente
-            const divAlvo = document.getElementById(targetId);
-
-            // Se a div de destino existir, remove a classe 'oculto' para mostrá-la
-            if (divAlvo) {
-                divAlvo.classList.remove('oculto');
-            }
         });
     });
 });
