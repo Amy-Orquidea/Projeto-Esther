@@ -1,5 +1,5 @@
 document.getElementById('botao1').addEventListener('click', function() {
-    window.location.href = '/esther/transtorno';
+    window.location.href = '/esther/transtornos';
 });
 
 document.getElementById('botao2').addEventListener('click', function() {

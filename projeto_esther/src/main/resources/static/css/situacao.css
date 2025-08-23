@@ -108,10 +108,12 @@ header {
 }
 
 .div {
-  display: flex;
-  height: fit-content;
-  margin-top: 5vh;
-  padding: 0.5vw;
+    display: flex;
+    height: fit-content;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 .informacaoDireita {

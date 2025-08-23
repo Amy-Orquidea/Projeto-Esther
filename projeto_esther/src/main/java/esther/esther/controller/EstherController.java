@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/esther")
 public class EstherController {
 
-    @GetMapping("/transtorno")
+    @GetMapping("/transtornos")
     public String transtornos() {
-        // return "esther/transtorno";
-        return "erro";
+        return "esther/transtorno";
+        // return "erro";
     }
 
     @GetMapping("/deficiencias")

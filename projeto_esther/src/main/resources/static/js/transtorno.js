@@ -12,7 +12,7 @@ for (const botao of botoes) {
         }, 300);
         });
     document.getElementById('esquerda').addEventListener('click', function() {
-        window.location.href = '/esther/situacoes';
+        window.location.href = '/esther/transtornos';
     });
     document.getElementById('meio').addEventListener('click', function() {      
         window.location.href = 'x';
