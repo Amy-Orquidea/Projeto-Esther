@@ -1,5 +1,5 @@
 body {
-    background-image: url('/img/transtornos.gif');
+    background-image: url('/img/background/transtornos.gif');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,6 +26,13 @@ header {
     justify-content: center;
     gap: 13vw;
     border-bottom: 0.5vh solid aliceblue;
+}
+
+@font-face {
+    font-family: 'Arcade Gamer';
+    src: url('/font/PressStart2P-vaV7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 #informacao {
@@ -55,7 +62,7 @@ header {
 }
 
 .estrela.personagem1 {
-    background-image: url('/img/estrela.gif');
+    background-image: url('/img/outro/estrela.gif');
     width: 10vw;
     height: 10vh;
     margin-left: 37vw;
@@ -67,7 +74,7 @@ header {
 }
 
 .estrela.personagem2 {
-    background-image: url('/img/estrela.gif');
+    background-image: url('/img/outro/estrela.gif');
     width: 10vw;
     height: 10vh;
     margin-top: 22vh;
@@ -80,7 +87,7 @@ header {
 }
 
 .estrela.personagem3 {
-    background-image: url('/img/estrela.gif');
+    background-image: url('/img/outro/estrela.gif');
     width: 10vw;
     height: 10vh;
     margin-top: 45vh;
@@ -99,18 +106,22 @@ header {
 .infoEsquerda {
     width: 40vw;
     height: fit-content;
-    padding: 1vw;
-    border: 1px solid #ddd;
     border-radius: 1vw;
-    background-color: #ecce7f;
     opacity: 0.85;
     margin-left: 8vw;
     overflow: auto;
+    align-items: center;
+    background: url('/img/background/caixa-dos-personagens.gif') no-repeat center/cover;
 }
 
-#morte{
-    width: 17vw;
-    height: 14vw;
+#dewey {
+    font-family: 'Arcade Gamer', sans-serif;
+    color: #20a254;
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 7vw;
 }
 
 .div {
@@ -122,23 +133,9 @@ header {
     padding-bottom: 2vw;
 }
 
-.bloco-flutuante {
-    float: left;
-    margin-right: fit-content;
-    margin-bottom: fit-content;
-    text-align: center;
-    padding-right: 1.7vw;
-    padding-left: 1.7vw;
-    padding-bottom: 1vw;
-    padding-top: 0.3vw;
-}
-
-.bloco-flutuante .titulo {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0 0 0.2em 0;
-    font-family: 'Libre Baskerville', serif;
-    text-align: left;
+.card-flex {
+    display: flex;
+    align-items: flex-end;
 }
 
 .personagem {
@@ -148,17 +145,22 @@ header {
 }
 
 .logo {
-    width: 15vw;
+    width: 12vw;
     height: 6vw;
+    padding-left: 1vw;
     display: block;
+    position: absolute;
+    bottom: 4vw;
 }
 
 .texto-descritivo {
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: center;
+    color: aliceblue;
 }
 
-.infoEsquerda p,.infoDireita p {
+.infoEsquerda p,
+.infoDireita p {
     font-size: 1.13rem;
     text-align: justify;
 }
@@ -178,7 +180,7 @@ header {
 }
 
 .estrela.personagem4 {
-    background-image: url('/img/estrela.gif');
+    background-image: url('/img/outro/estrela.gif');
     width: 10vw;
     height: 10vh;
     margin-left: 57vw;
@@ -190,7 +192,7 @@ header {
 }
 
 .estrela.personagem5 {
-    background-image: url('/img/estrela.gif');
+    background-image: url('/img/outro/estrela.gif');
     width: 10vw;
     height: 10vh;
     margin-left: 57vw;
@@ -203,7 +205,7 @@ header {
 }
 
 .estrela.personagem6 {
-    background-image: url('/img/estrela.gif');
+    background-image: url('/img/outro/estrela.gif');
     width: 10vw;
     height: 10vh;
     margin-left: 57vw;
@@ -219,14 +221,13 @@ header {
 .infoDireita {
     width: 40vw;
     height: fit-content;
-    padding: 1vw;
-    border: 1px solid #ddd;
     border-radius: 1vw;
-    background-color: #ecce7f;
     opacity: 0.85;
     left: 10vw;
     position: absolute;
     overflow: auto;
+    align-items: center;
+    background: url('/img/background/caixa-dos-personagens.gif') no-repeat center/cover;
 }
 
 .pai-flex {
@@ -309,7 +310,7 @@ header {
 /* Estrelas à esquerda */
 .estrela.esquerda1 {
     right: 67%;
-    background-image: url('/img/star-kawaii-kawaii.gif');
+    background-image: url('/img/outro/star-kawaii-kawaii.gif');
     width: 10vw;
     height: 5vh;
     transform: rotate(-25deg);
@@ -318,7 +319,7 @@ header {
 
 .estrela.esquerda2 {
     right: 64%;
-    background-image: url('/img/star-kawaii-kawaii.gif');
+    background-image: url('/img/outro/star-kawaii-kawaii.gif');
     width: 12vw;
     height: 7vh;
     transform: rotate(-25deg);
@@ -328,7 +329,7 @@ header {
 
 .estrela.esquerda3 {
     right: 63%;
-    background-image: url('/img/star-kawaii-kawaii.gif');
+    background-image: url('/img/outro/star-kawaii-kawaii.gif');
     width: 10.7vw;
     height: 5.7vh;
     transform: rotate(20deg);
@@ -337,7 +338,7 @@ header {
 /* Estrelas à direita */
 .estrela.direita1 {
     left: 72%;
-    background-image: url('/img/star-kawaii-kawaii.gif');
+    background-image: url('/img/outro/star-kawaii-kawaii.gif');
     width: 10vw;
     height: 5vh;
     transform: rotate(15deg);
@@ -346,7 +347,7 @@ header {
 
 .estrela.direita2 {
     left: 73.3%;
-    background-image: url('/img/star-kawaii-kawaii.gif');
+    background-image: url('/img/outro/star-kawaii-kawaii.gif');
     width: 12vw;
     height: 7vh;
     transform: rotate(18deg);
@@ -355,7 +356,7 @@ header {
 
 .estrela.direita3 {
     left: 74.5%;
-    background-image: url('/img/star-kawaii-kawaii.gif');
+    background-image: url('/img/outro/star-kawaii-kawaii.gif');
     width: 9.5vw;
     height: 4.7vh;
     transform: rotate(10deg);
