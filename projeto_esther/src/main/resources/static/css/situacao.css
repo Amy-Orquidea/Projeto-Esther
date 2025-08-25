@@ -28,6 +28,20 @@ header {
   border-bottom: 0.5vh solid aliceblue;
 }
 
+@font-face {
+  font-family: 'Arcade Gamer';
+  src: url('/font/PressStart2P-vaV7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Preciosa';
+  src: url('/font/PRECIOSA.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #informacao {
   background: linear-gradient(90deg, #004aad, #cb6ce6);
   display: block;
@@ -99,12 +113,13 @@ header {
 .infoEsquerda {
   width: 40vw;
   height: fit-content;
-  padding: 1vw;
-  border: 1px solid #ddd;
   border-radius: 1vw;
-  background-color: #ecce7f;
   opacity: 0.85;
   margin-left: 8vw;
+  overflow: auto;
+  align-items: center;
+  background: url('/img/background/caixa-dos-personagens.gif') no-repeat center/cover;
+  position: relative;
 }
 
 .div {
@@ -112,8 +127,40 @@ header {
   height: fit-content;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+}
+
+.card-flex {
+  display: flex;
+  align-items: flex-end;
+}
+
+.personagem {
+  width: 15vw;
+  height: 15vw;
+  display: block;
+}
+
+.logo {
+  width: 12vw;
+  height: 6vw;
+  padding-left: 1vw;
+  display: block;
+  position: absolute;
+  bottom: 70%;
+}
+
+.texto-descritivo {
+  font-size: 1.2rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+.infoEsquerda p,
+.infoDireita p {
+  font-size: 1.13rem;
+  text-align: justify;
 }
 
 .informacaoDireita {
@@ -126,7 +173,6 @@ header {
   border: 0.75vh solid aliceblue;
   width: 35vw;
   height: fit-content;
-  margin-left: 1vw;
   opacity: 0.85;
   margin-left: 61.4vw;
 }
@@ -173,13 +219,13 @@ header {
 .infoDireita {
   width: 40vw;
   height: fit-content;
-  padding: 1vw;
-  border: 1px solid #ddd;
   border-radius: 1vw;
-  background-color: #ecce7f;
   opacity: 0.85;
   left: 10vw;
   position: absolute;
+  overflow: auto;
+  align-items: center;
+  background: url('/img/background/caixa-dos-personagens.gif') no-repeat center/cover;
 }
 
 .pai-flex {

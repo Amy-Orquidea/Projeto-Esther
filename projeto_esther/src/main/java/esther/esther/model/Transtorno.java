@@ -8,9 +8,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "deficienciasFisicas")
-public class Deficiencia {
-    
+@Table(name = "transtornosMentais")
+public class Transtorno {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -21,21 +21,6 @@ public class Deficiencia {
     @Column(length = 678)
     private String comentario;
 
-    
-
-    //Constructors
-    public Deficiencia() {
-    }
-
-    public Deficiencia(Integer id, String nome, String comentario) {
-        this.id = id;
-        this.nome = nome;
-        this.comentario = comentario;
-    }
-
-
-
-    //Gets & Setters
     public Integer getId() {
         return id;
     }
@@ -57,6 +42,15 @@ public class Deficiencia {
     }
 
     public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    public Transtorno() {
+    }
+
+    public Transtorno(Integer id, String nome, String comentario) {
+        this.id = id;
+        this.nome = nome;
         this.comentario = comentario;
     }
 

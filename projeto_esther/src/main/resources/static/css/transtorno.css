@@ -35,6 +35,13 @@ header {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Preciosa';
+    src: url('/font/PRECIOSA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #informacao {
     background: linear-gradient(90deg, #004aad, #cb6ce6);
     display: block;
@@ -112,6 +119,7 @@ header {
     overflow: auto;
     align-items: center;
     background: url('/img/background/caixa-dos-personagens.gif') no-repeat center/cover;
+    position: relative; 
 }
 
 #dewey {
@@ -121,7 +129,19 @@ header {
     text-align: center;
     display: block;
     position: absolute;
-    bottom: 7vw;
+    bottom: 70%;
+}
+
+#laios {
+    font-family: 'Preciosa', sans-serif;
+    color: #B0B0B0;
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 75%;
+    transform: rotate(-20deg);
+    padding-left: 1vw;
 }
 
 .div {
@@ -130,7 +150,7 @@ header {
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-bottom: 3vw;
 }
 
 .card-flex {
@@ -150,7 +170,7 @@ header {
     padding-left: 1vw;
     display: block;
     position: absolute;
-    bottom: 4vw;
+    bottom: 70%;
 }
 
 .texto-descritivo {
