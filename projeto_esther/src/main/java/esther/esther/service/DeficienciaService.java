@@ -28,8 +28,8 @@ public class DeficienciaService {
                 .orElseThrow(() -> new EntityNotFoundException("Comentário não encontrado com ID:" + id));
     }
 
-    public Deficiencia salvarComentario(Deficiencia usuario){
-        return deficienciaRepository.save(usuario);
+    public Deficiencia salvarComentario(Deficiencia deficiencia){
+        return deficienciaRepository.save(deficiencia);
     }
 
     public void excluirComentarioPorId(Integer id){

@@ -15,10 +15,10 @@ for (const botao of botoes) {
         window.location.href = '/esther/deficiencias';
     });
     document.getElementById('meio').addEventListener('click', function() {      
-        window.location.href = 'x';
+        window.location.href = '/def/info';
     });
     document.getElementById('direita').addEventListener('click', function() {
-        window.location.href = 'z';
+        window.location.href = '/def/comentario';
     });
         document.getElementById('voltar').addEventListener('click', function() {
         window.location.href = '/';

@@ -24,21 +24,16 @@ public class DeficienciaController {
         this.deficienciaService = deficienciaService;
     }
 
-    @GetMapping
-    public String listarComentarios(Model model) {
-        model.addAttribute("deficiencias", deficienciaService.buscarComentarios());
-        return "deficiencia/lista";
-    }
-
     @GetMapping("/adm")
     public String listarComentariosAdm(Model model) {
         model.addAttribute("deficiencias", deficienciaService.buscarComentarios());
         return "deficiencia/listaAdm";
     }
 
-    @GetMapping("/adicionar")
-    public String exibirFormulario() {
-        return "deficiencia/form";
+    @GetMapping("/comentario")
+    public String exibirFormulario(Model model) {
+        model.addAttribute("deficiencias", deficienciaService.buscarComentarios());
+        return "deficiencia/comentario";
     }
 
     @PostMapping
@@ -46,10 +41,10 @@ public class DeficienciaController {
         try {
             deficienciaService.salvarComentario(def);
             redirectAttributes.addFlashAttribute("sucesso", "Comentário salvo com sucesso!");
-            return "redirect:/def";
+            return "redirect:/def/comentario";
         } catch (Exception e) {
             redirectAttributes.addFlashAttribute("erro", "Erro ao salvar o comentário: " + e.getMessage());
-            return "deficiencia/form";
+            return "deficiencia/comentario";
         }
     }
 

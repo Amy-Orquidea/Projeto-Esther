@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <link rel="stylesheet" href="/css/comentarioDef.css">
+</head>
+
+<body>
+    <h1>Bem vindos a nossa área de comentários!</h1>
+    <h1>escolha um Pseudônimo e nos conte algum acontecimento envolvendo sua deficiência, como
+        queixa por falta de acessibilidade, por exemplo.</h1>
+    <form action="/def" method="post" enctype="multipart/form-data">
+        <div class="formulario">
+            <textarea type="text" class="digitar" id="nome" name="nome" placeholder="Pseudônimo do Usuário"
+                required></textarea>
+            <textarea type="text" class="digitar" id="comentario" name="comentario"
+                placeholder="Digite seu Comentário"></textarea>
+            <button type="submit" class="enviar">Enviar Comentario</button>
+        </div>
+    </form>
+
+    <div th:each="deficiencia : ${deficiencias}">
+        <h2 th:text="${deficiencia.nome}"></h2>
+        <p th:text="${deficiencia.comentario}"></p>
+    </div>
+
+    <script src="/js/comentarioDef.js"></script>
+</body>
+
+</html>

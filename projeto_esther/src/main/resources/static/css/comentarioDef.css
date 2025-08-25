@@ -1,0 +1,56 @@
+body {
+    background-image: url('/img/background/comentarios-deficiencias.gif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
+}
+
+textarea {
+    resize: none;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: aliceblue;
+}
+
+.digitar {
+    background-color: #c3bd62;
+    border-radius: 1vw;
+    width: 60vw;
+    height: fit-content;
+    border: none;
+    font-size: 1.3rem;
+    color: aliceblue;
+    padding: 0.5vw;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.enviar {
+    width: 18vw;
+    height: fit-content;
+    border-radius: 1vw;
+    border: none;
+    background-color: #c3bd62;
+    padding: 1vw;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+}
+
+.comentario {}
+
+.formulario {
+    display: grid;
+    height: fit-content;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+    gap: 2vw;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
