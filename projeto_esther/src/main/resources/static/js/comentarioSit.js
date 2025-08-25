@@ -19,13 +19,13 @@ for (const botao of botoes) {
         }, 300);
     });
     document.getElementById('esquerda').addEventListener('click', function () {
-        window.location.href = '/esther/deficiencias';
+        window.location.href = '/esther/situacoes';
     });
     document.getElementById('meio').addEventListener('click', function () {
-        window.location.href = '/def/info';
+        window.location.href = '/sit/info';
     });
     document.getElementById('direita').addEventListener('click', function () {
-        window.location.href = '/def/comentario';
+        window.location.href = '/sit/comentario';
     });
     document.getElementById('voltar').addEventListener('click', function () {
         window.location.href = '/';

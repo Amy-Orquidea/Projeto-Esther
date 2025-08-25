@@ -15,10 +15,10 @@ for (const botao of botoes) {
         window.location.href = '/esther/situacoes';
     });
     document.getElementById('meio').addEventListener('click', function() {      
-        window.location.href = 'x';
+        window.location.href = '/sit/info';
     });
     document.getElementById('direita').addEventListener('click', function() {
-        window.location.href = 'z';
+        window.location.href = '/sit/comentario';
     });
         document.getElementById('voltar').addEventListener('click', function() {
         window.location.href = '/';

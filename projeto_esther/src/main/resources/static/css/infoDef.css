@@ -1,0 +1,90 @@
+body {
+    background-image: url('/img/background/curiosidade-deficiencias.gif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 13vw;
+    border-bottom: 0.5vh solid aliceblue;
+}
+
+.topo{
+    color: aliceblue;
+    background-color: #BB2AEB;
+    font-family: 'Libre Baskerville', serif;
+    padding: 1vw;
+    border-radius: 1vw;
+    border-color: aliceblue;
+    width: 18vw;
+    height: 3vw;
+    text-align: center;
+
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+}
+
+.curiosidade {
+    position: relative;
+    background: linear-gradient(to bottom right, #ebff00, #fff47e);
+    width: 60vw;
+    height: fit-content;
+    border-radius: 0.5vw;
+    font-size: 1.1rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.curiosidade::before {
+    content: '';
+    position: absolute;
+    top: -0.4vw;
+    /* Ajuste para criar o "tamanho" da borda */
+    left: -0.4vw;
+    right: -0.4vw;
+    bottom: -0.4vw;
+    background: linear-gradient(45deg, #24289b, #ffea5e);
+    z-index: -1;
+    border-radius: 1vw;
+    /* Opcional: para bordas arredondadas */
+}
+
+.botao-header {
+    background-color: transparent;
+    font-size: 1.2em;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 1vw;
+    margin: 2vh 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.botao-header:hover {
+    cursor: pointer;
+}
+
+#esquerda {
+    color: aliceblue;
+}
+
+#meio {
+    color: #ff66c4;
+}
+
+#direita {
+    color: aliceblue;
+}
+
+#voltar {
+    color: aliceblue;
+}

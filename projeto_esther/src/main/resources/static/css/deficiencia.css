@@ -29,15 +29,43 @@ header {
 }
 
 @font-face {
-  font-family: 'Arcade Gamer';
-  src: url('/font/PressStart2P-vaV7.ttf') format('truetype');
+  font-family: 'Amazone';
+  src: url('/font/Amazone Demo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Preciosa';
-  src: url('/font/PRECIOSA.ttf') format('truetype');
+  font-family: 'Comica';
+  src: url('/font/ComicaRegular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alkatra';
+  src: url('/font/Alkatra-Regular-BF651b8aa766770.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chewy';
+  src: url('/font/Chewy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aloja';
+  src: url('/font/Aloja-Light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url('/font/Gagalin-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -236,6 +264,57 @@ header {
   margin-top: 5vh;
 }
 
+#dorinha {
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: 'Amazone';
+  color: #ff914d;
+  bottom: 65%;
+}
+
+#erisa {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Gagalin';
+  color: #20a254;
+  bottom: 65%;
+}
+
+#takeru {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'chewy';
+  color: #938154;
+  bottom: 68%;
+}
+
+#soluco {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'alkatra';
+  color: #8b8888;
+  bottom: 68%;
+
+}
+
+#finn {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'alkatra';
+  color: #0cc0df;
+  bottom: 76%;
+  left: 10%;
+}
+
+#minguado {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Comica';
+  color: #ff3131;
+  bottom: 50%;
+  left: 30%;
+}
+
 .botao-header {
   background-color: transparent;
   font-size: 1.2em;
@@ -359,4 +438,17 @@ header {
   height: 4.7vh;
   transform: rotate(10deg);
   top: 40%;
+}
+
+.topo {
+  color: aliceblue;
+  background-color: #BB2AEB;
+  font-family: 'Libre Baskerville', serif;
+  padding: 1vw;
+  border-radius: 1vw;
+  border-color: aliceblue;
+  width: 18vw;
+  height: 3vw;
+  text-align: center;
+
 }

@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    <div th:each="deficiencia : ${deficiencias}">
-        <h2 th:text="${deficiencia.nome}"></h2>
-        <p th:text="${deficiencia.comentario}"></p>
+    <div th:each="situacao : ${situacoes}">
+        <h2 th:text="${situacao.nome}"></h2>
+        <p th:text="${situacao.comentario}"></p>
         <button><a th:href="@{'/comentario/deletar/' + ${deficiencia.id}}" onclick="return confirm('Deseja realmente excluir esta espécie?');">Excluir</a></button>
     </div>
 

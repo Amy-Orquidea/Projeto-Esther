@@ -24,6 +24,11 @@ public class DeficienciaController {
         this.deficienciaService = deficienciaService;
     }
 
+    @GetMapping("/info")
+    public String informacoes(){
+        return "deficiencia/info";
+    }
+
     @GetMapping("/adm")
     public String listarComentariosAdm(Model model) {
         model.addAttribute("deficiencias", deficienciaService.buscarComentarios());

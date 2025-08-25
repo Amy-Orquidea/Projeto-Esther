@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios Deficiencia</title>
-    <link rel="stylesheet" href="/css/comentarioDef.css">
+    <link rel="stylesheet" href="/css/comentarioSit.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
@@ -19,7 +19,7 @@
 
     <h1>Bem vindos a nossa área de comentários!</h1>
     <h1>Escolha um Pseudônimo e compartilhe conosco sua experiência e acontecimentos sobre o assunto.</h1>
-    <form action="/def" method="post" enctype="multipart/form-data">
+    <form action="/sit" method="post" enctype="multipart/form-data">
         <div class="formulario">
             <textarea type="text" class="digitar" id="nome" name="nome" placeholder="Pseudônimo do Usuário"
                 required></textarea>
@@ -29,16 +29,16 @@
         </div>
     </form>
 
-    <div th:each="deficiencia : ${deficiencias}" style="padding: 2vw;">
+    <div th:each="situacao : ${situacoes}" style="padding: 2vw;">
         <div class="comentario">
             <i class="bi bi-person-square">
-                <h2 th:text="${deficiencia.nome}"></h2>
+                <h2 th:text="${situacao.nome}"></h2>
             </i>
-            <p th:text="${deficiencia.comentario}"></p>
+            <p th:text="${situacao.comentario}"></p>
         </div>
     </div>
 
-    <script src="/js/comentarioDef.js"></script>
+    <script src="/js/comentarioSit.js"></script>
 </body>
 
 </html>

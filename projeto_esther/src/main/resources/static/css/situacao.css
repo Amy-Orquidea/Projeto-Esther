@@ -29,15 +29,36 @@ header {
 }
 
 @font-face {
-  font-family: 'Arcade Gamer';
-  src: url('/font/PressStart2P-vaV7.ttf') format('truetype');
+  font-family: 'Aloja';
+  src: url('/font/Aloja-Light.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Preciosa';
-  src: url('/font/PRECIOSA.ttf') format('truetype');
+  font-family: 'Ananias';
+  src: url('/font/Ananias Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Angelina';
+  src: url('/font/angelina.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amstrong';
+  src: url('/font/Amstrong.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alpha';
+  src: url('/font/Alpha-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -252,6 +273,50 @@ header {
 
 .botao-header:active {
   color: #fde070;
+}
+
+#alluka {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Aloja';
+  color: #e94b86;
+  bottom: 69%;
+
+}
+
+#shirou {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Alpha';
+  color: #ff6d4d;
+  bottom: 69%;
+}
+
+#nami {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Alpha';
+  color: #ff914d;
+  bottom: 68%;
+  left: 4%;
+}
+
+#maki {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Angelina';
+  color: #20a254;
+  bottom: 61%;
+  left: 15%;
+}
+
+#katara {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Ananias';
+  color: #5ce1e6;
+  bottom: 60%;
+  left: 20%;
 }
 
 #esquerda {

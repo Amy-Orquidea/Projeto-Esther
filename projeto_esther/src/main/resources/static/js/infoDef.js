@@ -1,11 +1,3 @@
-const areas = document.getElementsByClassName('digitar');
-for (let i = 0; i < areas.length; i++) {
-    areas[i].addEventListener('input', function () {
-        this.style.height = 'auto';
-        this.style.height = this.scrollHeight + 'px';
-    });
-}
-
 const botoes = document.getElementsByClassName('botao-header');
 
 // 2. Iterar sobre a coleção de botões
@@ -30,4 +22,15 @@ for (const botao of botoes) {
     document.getElementById('voltar').addEventListener('click', function () {
         window.location.href = '/';
     });
+}
+
+// Obtém o botão
+let meuBotao = document.getElementById("btnTopo");
+
+// Quando o botão é clicado, rola a página de volta ao topo
+meuBotao.addEventListener('click', topFunction);
+
+function topFunction() {
+    document.body.scrollTop = 0; // Para navegadores Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
 }
