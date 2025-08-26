@@ -11,7 +11,9 @@
     <div th:each="deficiencia : ${deficiencias}">
         <h2 th:text="${deficiencia.nome}"></h2>
         <p th:text="${deficiencia.comentario}"></p>
-        <button style="background-color: red; color: aliceblue;"><a th:href="@{'/comentario/deletar/' + ${deficiencia.id}}" onclick="return confirm('Deseja realmente excluir esta espécie?');">Excluir</a></button>
+        <button style="background-color: red; color: aliceblue;"><a
+                th:href="@{'/comentario/deletar/' + ${deficiencia.id}}"
+                onclick="return confirm('Deseja realmente excluir este comentário?');">Excluir</a></button>
     </div>
 
 </body>
