@@ -25,6 +25,11 @@ for (const botao of botoes) {
     });
 }
 
+document.getElementById('coment').addEventListener('click', function () {
+    window.location.href = '/def/comentario';
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Seleciona todos os contêineres principais (as divs com a classe 'div')
     const secoes = document.querySelectorAll('.div');

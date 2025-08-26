@@ -49,8 +49,8 @@ h1 {
 
 #botao4 {
     background-color: #BB2AEB;
-    margin-left: 37.7vw;
     font-family: 'Libre Baskerville', serif;
+    position: absolute;
 }
 
 #container1 {
@@ -59,7 +59,7 @@ h1 {
 
 #container2 {
     gap: 5.8vw;
-    margin-top: 3vh;
+    margin-top: 7vw;
 }
 
 #estrelaDosDesejos {
