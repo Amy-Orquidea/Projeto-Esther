@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios Situações</title>
-    <link rel="stylesheet" href="/css/comentarioSit.css">
+    <title>Comentarios Transtornos</title>
+    <link rel="stylesheet" href="/css/comentarioTrans.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
-        <button type="button" class="botao-header" id="esquerda"><b>Situações de Sociabilidade</b></button>
+        <button type="button" class="botao-header" id="esquerda"><b>Transtornos Mentais</b></button>
         <button type="button" class="botao-header" id="meio"><b>Mais Informações</b></button>
         <button type="button" class="botao-header" id="direita"><b>Comentários</b></button>
         <button type="button" class="botao-header" id="voltar"><b>Início</b></button>
@@ -19,7 +19,7 @@
 
     <h1>Bem vindos a nossa área de comentários!</h1>
     <h1>Escolha um Pseudônimo e compartilhe conosco sua experiência e acontecimentos sobre o assunto.</h1>
-    <form action="/sit" method="post" enctype="multipart/form-data">
+    <form action="/trans" method="post" enctype="multipart/form-data">
         <div class="formulario">
             <textarea type="text" class="digitar" id="nome" name="nome" placeholder="Pseudônimo do Usuário"
                 required></textarea>
@@ -29,16 +29,16 @@
         </div>
     </form>
 
-    <div th:each="situacao : ${situacoes}" style="padding: 2vw;">
+    <div th:each="transtorno : ${transtornos}" style="padding: 2vw;">
         <div class="comentario">
             <i class="bi bi-person-square">
-                <h2 th:text="${situacao.nome}"></h2>
+                <h2 th:text="${transtorno.nome}"></h2>
             </i>
-            <p th:text="${situacao.comentario}"></p>
+            <p th:text="${transtorno.comentario}"></p>
         </div>
     </div>
 
-    <script src="/js/comentarioSit.js"></script>
+    <script src="/js/comentarioTrans.js"></script>
 </body>
 
 </html>

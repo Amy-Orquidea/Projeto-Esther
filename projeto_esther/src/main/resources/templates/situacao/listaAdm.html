@@ -11,7 +11,7 @@
     <div th:each="situacao : ${situacoes}">
         <h2 th:text="${situacao.nome}"></h2>
         <p th:text="${situacao.comentario}"></p>
-        <button><a th:href="@{'/comentario/deletar/' + ${deficiencia.id}}" onclick="return confirm('Deseja realmente excluir esta espécie?');">Excluir</a></button>
+        <button style="background-color: red; color: aliceblue;"><a th:href="@{'/comentario/deletar/' + ${situacao.id}}" onclick="return confirm('Deseja realmente excluir esta espécie?');">Excluir</a></button>
     </div>
 
 </body>

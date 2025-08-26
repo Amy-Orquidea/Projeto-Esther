@@ -1,0 +1,79 @@
+body {
+    background-image: url('/img/background/comentarios-transtornos.gif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1,
+h2 {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.formulario {
+    display: block;
+    height: fit-content;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+    gap: 4vw;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    position: absolute;
+    left: 40vw;
+}
+
+.voltar{
+    color: aliceblue;
+    background-color: #BB2AEB;
+    font-family: 'Libre Baskerville', serif;
+    padding: 1vw;
+    border-radius: 1vw;
+    border-color: aliceblue;
+    width: 18vw;
+    height: 3vw;
+    text-align: center;
+    position: absolute;
+    top: 27vw;
+    left: 40vw;
+
+}
+
+.div {
+    display: flex;
+    height: fit-content;
+    position: relative;
+}
+
+.estrela {
+    font-size: 2rem;
+    color: #F7F73E;
+}
+
+input[type="radio"] {
+    /* Aumenta o tamanho do radio button em 1.5 vezes */
+    transform: scale(2);
+    font-size: 2rem;
+
+    /* Centraliza o botão verticalmente, pois o transform pode alterar o alinhamento */
+    vertical-align: middle;
+}
+
+.enviar {
+    width: 18vw;
+    height: fit-content;
+    border-radius: 1vw;
+    border: none;
+    border-radius: 1vw;
+    border: 0.5vh solid aliceblue;
+    background-color: #c3bd62;
+    padding: 1vw;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+}
