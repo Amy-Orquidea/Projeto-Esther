@@ -9,3 +9,7 @@ document.getElementById('botao2').addEventListener('click', function() {
 document.getElementById('botao3').addEventListener('click', function() {
     window.location.href = '/esther/situacoes';
 });
+
+document.getElementById('botao4').addEventListener('click', function() {
+    window.location.href = '/esther/avaliacoes';
+});
