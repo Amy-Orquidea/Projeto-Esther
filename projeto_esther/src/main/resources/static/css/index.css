@@ -14,7 +14,7 @@ h1 {
 
 /* IDs */
 #projeto {
-    word-spacing: 36.9vw;
+    word-spacing: 33vw;
 }
 
 #caixa1 {
@@ -32,7 +32,7 @@ h1 {
 
 #botao1 {
     background-color: #c57c37;
-    margin-left: 16vw;
+    margin-left: 30px;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -43,14 +43,12 @@ h1 {
 
 #botao3 {
     background-color: #044559;
-    margin-top: 12.5vh;
     font-family: 'Libre Baskerville', serif;
 }
 
 #botao4 {
     background-color: #BB2AEB;
     font-family: 'Libre Baskerville', serif;
-    position: absolute;
 }
 
 #container1 {
@@ -58,7 +56,7 @@ h1 {
 }
 
 #container2 {
-    gap: 5.8vw;
+    gap: 120px;
     margin-top: 7vw;
 }
 
