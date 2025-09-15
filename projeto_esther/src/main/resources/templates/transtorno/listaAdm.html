@@ -12,7 +12,7 @@
         <h2 th:text="${transtorno.nome}"></h2>
         <p th:text="${transtorno.comentario}"></p>
         <button style="background-color: red; color: aliceblue;"><a
-                th:href="@{'/comentario/deletar/' + ${transtorno.id}}"
+                th:href="@{'/trans/deletar/' + ${transtorno.id}}"
                 onclick="return confirm('Deseja realmente excluir este comentário?');">Excluir</a></button>
     </div>
 
