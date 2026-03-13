@@ -1,2 +1,2 @@
 # Projeto Esther
-
+#### Um projeto escolar feito em menos de 1 mês. A esther é um site de conscientização sobre deficiências fisicas, transtornos mentais e problemas sociais; onde cada área tem 3 repartições, uma que mostra personagens que possuem aquele tópico e como ele é representado; outra que conta curiosidades sobre esses tópicos; por último existe a área de comentários, pensada para que as pessoas que sofreram algo envolvendo aqueles tópicos possam desabafar e contar suas vivências.
